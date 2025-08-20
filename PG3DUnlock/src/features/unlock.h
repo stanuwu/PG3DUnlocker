@@ -46,7 +46,6 @@ namespace unlock
         "Hat",
         "Boots",
         "Cape",
-        "Gadget",
         "Pet",
         "Avatar",
         "Royale"
