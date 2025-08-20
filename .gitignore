@@ -1,0 +1,9 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+.idea
+x64
+PG3DUnlock/x64
+PG3DUnlock.sln.DotSettings.user
