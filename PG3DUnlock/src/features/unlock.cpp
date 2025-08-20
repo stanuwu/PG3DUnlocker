@@ -50,12 +50,10 @@ namespace unlock
         oWeaponSoundsUpdate = reinterpret_cast<void(*)(void*)>(offsets::weapon_sounds_update.GetAddress());
         oLotteryGetPrice = reinterpret_cast<int(*)(void*)>(offsets::lottery_get_price.GetAddress());
         oLotteryGetCount = reinterpret_cast<int(*)(void*)>(offsets::lottery_get_count.GetAddress());
-        oGetRewardMultiplier = reinterpret_cast<int(*)(void*)>(offsets::get_reward_multiplier.GetAddress());
 
         DetourAttach(&(PVOID&)(oWeaponSoundsUpdate), hkWeaponSoundsUpdate);
         DetourAttach(&(PVOID&)(oLotteryGetPrice), hkLotteryGetPrice);
         DetourAttach(&(PVOID&)(oLotteryGetCount), hkLotteryGetCount);
-        DetourAttach(&(PVOID&)(oGetRewardMultiplier), hkGetRewardMultiplier);
 
         LONG status = DetourTransactionCommit();
         if (status != NO_ERROR)
@@ -215,11 +213,5 @@ namespace unlock
     {
         if (changeCount) return newCount;
         return oLotteryGetPrice(instance);
-    }
-
-    int __fastcall hkGetRewardMultiplier(void* instance)
-    {
-        if (rewardMultiplier) return rewardMultiplierAmount;
-        return oGetRewardMultiplier(instance);
     }
 }

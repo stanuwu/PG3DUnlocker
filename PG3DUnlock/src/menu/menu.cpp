@@ -25,7 +25,7 @@ namespace menu
         ImGui::GetIO().MouseDrawCursor = is_active();
         if (is_active())
         {
-            ImGui::SetNextWindowSize(ImVec2(350, 630), ImGuiCond_Once);
+            ImGui::SetNextWindowSize(ImVec2(350, 540), ImGuiCond_Once);
             ImGui::SetNextWindowBgAlpha(1.0f);
             if (ImGui::Begin("PG3DUnlocker by stan", &draw_imgui,
                              ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoCollapse |
@@ -83,12 +83,8 @@ namespace menu
                     });
                 }
 
-                ImGui::SeparatorText("Lottery");
-                ImGui::Checkbox("Change Price", &unlock::rewardMultiplier);
-                ImGui::SliderInt("Price", &unlock::rewardMultiplierAmount, 1, safeMode ? 5 : 100);
-
                 ImGui::SeparatorText("Danger Zone");
-                ImGui::Checkbox("Disable Limits", &safeMode);
+                ImGui::Checkbox("Safe Limits", &safeMode);
 
                 ImGui::SeparatorText("Experimental");
                 ImGui::Checkbox("Log Websocket Emit", &ws::logWebsocket);

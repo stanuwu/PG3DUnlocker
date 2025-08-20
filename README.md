@@ -42,7 +42,6 @@ We are not encouraging modding or cheating with this repository. It is purely fo
 > - Add Currency (Gems, Counts, ClanSilver, ClanLootBoxPoints, Coupons, PixelPassCurrency)
 > - Modify Lottery (Price, Amount)
 > - Add Items (Weapons, Armor, Mask, Hat, Boots, Cape, Pet, Avatar, Royale)
-> - Reward Multiplier
 
 ## Building
 Use MSVC Build Tools v143

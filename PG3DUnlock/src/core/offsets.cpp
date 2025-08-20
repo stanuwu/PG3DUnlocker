@@ -31,7 +31,6 @@ namespace offsets
             makeScanObj(&add_weapon),
             makeScanObj(&add_pets),
             makeScanObj(&add_wear),
-            makeScanObj(&get_reward_multiplier),
             makeScanObj(&create_string_from_encoding),
             makeScanObj(&get_utf8_encoding),
         };

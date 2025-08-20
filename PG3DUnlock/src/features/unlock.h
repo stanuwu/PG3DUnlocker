@@ -29,9 +29,6 @@ namespace unlock
     inline bool changeCount = false;
     inline int newCount = 1;
 
-    inline bool rewardMultiplier = false;
-    inline int rewardMultiplierAmount = 1;
-
     inline auto itemMutex = std::mutex();
     inline auto itemQueue = std::vector<itemQueueItem>();
     inline int selectedType = 0;
@@ -145,6 +142,4 @@ namespace unlock
     int __fastcall hkLotteryGetPrice(void* instance);
     inline int (*oLotteryGetCount)(void* instance);
     int __fastcall hkLotteryGetCount(void* instance);
-    inline int (*oGetRewardMultiplier)(void* instance);
-    int __fastcall hkGetRewardMultiplier(void* instance);
 };
