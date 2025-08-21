@@ -212,6 +212,6 @@ namespace unlock
     int __fastcall hkLotteryGetCount(void* instance)
     {
         if (changeCount) return newCount;
-        return oLotteryGetPrice(instance);
+        return oLotteryGetCount(instance);
     }
 }
