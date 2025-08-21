@@ -52,8 +52,8 @@ Dependencies from vcpkg:
 
 `imgui`
 
-`imgui[dx10-binding]`
-
 `imgui[dx11-binding]`
+
+`imgui[dx12-binding]`
 
 `imgui[win32-binding]`
