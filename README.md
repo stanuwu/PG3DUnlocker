@@ -3,6 +3,9 @@
  # PixelGun3D Unlocker
 `by stanuwu`
 
+## GitAds Sponsored
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=stanuwu/pg3dunlocker@github)](https://gitads.dev/v1/ad-track?source=stanuwu/pg3dunlocker@github)
+
 > Issues on GitHub are only for bugs! Support will not be provided! Any issues not directly related to code bugs will be closed.
 
 ## Warning!
